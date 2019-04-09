@@ -1,11 +1,11 @@
 package ueb03;
 
-public class Palindrom {
+public class Palindrom<T extends Comparable<T>> {
 	static boolean istPalindrom(String s) {
 		if (s.length() == 1)
 			return true;
 
-		Stack stack = new StackImpl();
+		Stack<Character> stack = new StackImpl();
 		char[] cs = s.toLowerCase().replaceAll(" ", "").toCharArray();
 
 		// die erste Haelfte auf den Stack legen
