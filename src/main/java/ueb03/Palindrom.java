@@ -1,23 +1,6 @@
 package ueb03;
 
 public class Palindrom<T extends Comparable<T>> {
-	/*	class meineKlasse {
-            int attribut;
-            public boolean equals(Object o){
-                if(o == this){
-                    return true;
-                }
-                if(!(o instanceof meineKlasse)){
-                    return false;
-                }
-                meineKlasse other = (meineKlasse) o;
-
-                if (this.attribut != other.attribut){
-                    return false;
-                }
-                return true;
-            }
-        }  */
 	static boolean istPalindrom(String s) {
 		if (s.length() == 1)
 			return true;
